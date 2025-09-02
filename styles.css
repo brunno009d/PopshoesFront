@@ -1,1 +1,49 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar principal */
+.navbar {
+  display: flex;
+  justify-content: left; /* izquierda, centro y derecha */
+  align-items: center;
+  background-color: #f5f5f5;
+  padding:30px 10px 30px 10px;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 50px;
+}
+
+/* Menú */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: #007bff;
+}
+
+/* Carrito */
+.navbar-cart img {
+  height: 35px;
+  cursor: pointer;
+}
 
