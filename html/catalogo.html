@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <img src="/assets/img/logo.png" alt="Logo">
+            </div>
+
+            <!-- Menú centrado -->
+            <ul class="navbar-menu">
+                <li class="menu-item"><a href="../index.html">Home</a></li>
+                <li class="menu-item"><a href="#">Marcas</a></li>
+                <li class="menu-item"><a href="#">Mujer</a></li>
+                <li class="menu-item"><a href="#">Estilos</a></li>
+                <li class="menu-item"><a href="#">Famosos</a></li>
+            </ul>
+
+            <!-- Carrito + Login a la derecha -->
+            <div class="navbar-actions">
+                <div class="navbar-cart">
+                    <a href="html/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="navbar-login">
+                    <a href="html/inicioSesion.html">Inicio Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="catalogo-izq">
+        <aside class="aside-filtros">
+            <h3 >Filtro</h3>
+            <div class="filtro">
+                <h4>Genero</h4>
+                <label><input type="checkbox"> Hombre</label><br>
+                <label><input type="checkbox"> Mujer</label><br>
+                <label><input type="checkbox"> avion</label><br>
+            </div>
+            <div class="filtro">
+                <h4>Marca</h4>
+                <label><input type="checkbox"> Puma</label><br>
+                <label><input type="checkbox"> Adidas</label><br>
+                <label><input type="checkbox"> Nike</label><br>
+            </div>
+            <div class="filtro">
+                <h4>Color</h4>
+                <label><input type="checkbox"> Azul</label><br>
+                <label><input type="checkbox"> Rojo</label><br>
+                <label><input type="checkbox"> Café</label><br>
+            </div>
+            <div class="filtro">
+                <h4>Famosos</h4>
+                <label><input type="checkbox"> Badbunny</label><br>
+                <label><input type="checkbox"> Profe Byron</label><br>
+                <label><input type="checkbox"> Madona</label><br>
+            </div>
+        </aside>
+    </div>
     
 </body>
 </html>
