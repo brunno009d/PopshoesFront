@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar principal */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo - Menú - Acciones */
+  align-items: center;
+  background-color: #000000;
+  padding: 1rem 3rem;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 60px;
+  cursor: pointer;
+  
+}
+
+/* Menú (centrado con flex-grow) */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;             /* ocupa el espacio disponible */
+  justify-content: center;  /* centra el menú */
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: #760499;
+}
+
+/* Acciones (derecha) */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* separa carrito y login */
+}
+
+/* Carrito */
+.navbar-cart i {
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Login */
+.navbar-login a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-login a:hover {
+  color: #760499;
+}
+
+
+/* Filtro izq */
+
+.catalogo-izq {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* Sidebar 250px + productos */
+  gap: 20px;
+  padding: 40px;
+  margin: 50px;
+}
+
+/* Sidebar de filtros */
+.aside-filtros {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.filtro h4 {
+  margin: 15px 0 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Grilla de productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.producto button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
