@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Document</title>
+    
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <img src="../assets/img/logo.png" alt="Logo">
+            </div>
+
+            <!-- Menú centrado -->
+            <ul class="navbar-menu">
+                <li class="menu-item"><a href="../index.html">Home</a></li>
+                <li class="menu-item"><a href="../html/catalogo.html">Marcas</a></li>
+                <li class="menu-item"><a href="../html/catalogo.html">Mujer</a></li>
+                <li class="menu-item"><a href="../html/catalogo.html">Estilos</a></li>
+                <li class="menu-item"><a href="../html/catalogo.html">Famosos</a></li>
+            </ul>
+
+            <!-- Carrito + Login a la derecha -->
+            <div class="navbar-actions">
+                <div class="navbar-cart">
+                    <a href="../html/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="navbar-login">
+                    <a href="../html/inicioSesion.html">Inicio Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="carrito-container">
+        <h2>Mi Carrito</h2>
+        
+        <div class="carrito-layout">
+            <div class="carrito-productos">
+                <div class="carrito-sin-contenido">
+                </div>
+                <div class="carrito-contenido">
+                    <img class="carrito-imagen" src="../assets/img/Diseño sin título (4).png" alt="">
+                    <div class="producto-descripcion">
+                        <h4>zapatilla</h4>
+                    </div>
+                    <div class="producto-precio">
+                        <p>1200</p>
+                    </div>
+                    <div class="producto-cantidad">
+                        <p>2</p>
+                    </div>
+                    <button> <i class="fa-solid fa-x"></i> </button>
+                </div>
+                <div class="carrito-contenido">
+                    <img class="carrito-imagen" src="../assets/img/Diseño sin título (4).png" alt="">
+                    <div class="producto-descripcion">
+                        <h4>zapatilla</h4>
+                    </div>
+                    <div class="producto-precio">
+                        <p>1200</p>
+                    </div>
+                    <div class="producto-cantidad">
+                        <p>2</p>
+                    </div>
+                    <button> <i class="fa-solid fa-x"></i> </button>
+                </div>
+                <div class="carrito-vaciar">
+                    <p>Vaciar carrito</p>
+                    <button><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <div class="carrito-pagar">
+                <h3>Total a pagar</h3>
+                <div class="subtotal">
+                    <p id="total-pagar">1000</p>
+                </div>
+                <div class="total a pagar">
+                    <p id="total-pagar">10000</p>
+                </div>
+                <button class="carrito-boton-comprar">Comprar</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
