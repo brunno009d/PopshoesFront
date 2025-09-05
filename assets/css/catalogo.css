@@ -122,6 +122,12 @@ body {
   transition: transform 0.2s;
 }
 
+.producto button{
+  border: 1px;
+  border-radius: 10px;
+  ;
+}
+
 .producto:hover {
   transform: translateY(-5px);
 }
