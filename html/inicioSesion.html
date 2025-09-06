@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="../assets/css/inicioSesion.css">
 </head>
 <body>
-    
+    <div class="formulario">
+        <h1>Inicio de sesión</h1>
+        <form method="post">
+            <div class="campo username">
+                <input type="text" required placeholder="Nombre de usuario">
+            </div>
+            <div class="campo contrasena">
+                <input type="password" required placeholder="Contraseña">
+            </div>
+            <div class="recordar">¿Olvidó su contraseña?</div>
+            <input type="submit" value="Iniciar sesión">
+            
+            <div class="registrarse">
+                ¿No tiene una cuenta? <a href="registro.html"> Regístrese</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
