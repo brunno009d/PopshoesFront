@@ -1,19 +1,19 @@
 /* Reset básico */
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 100vh;
     background: linear-gradient(150deg, #7F22FE, #18181B);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Formulario centrado */
-.formulario {
+form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -24,66 +24,67 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.3);
     color: #000;
 }
 
 /* Título */
-.formulario h1 {
-    font-family: 'Poppins', sans-serif;
+h1 {
     text-align: center;
     font-size: 24px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ccc;
     margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
 }
 
-/* Campos de input */
-form .campo {
-    position: relative;
-    margin: 20px 0;
-}
-
-.campo input {
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     width: 100%;
     height: 45px;
-    padding: 0 5px;
+    margin: 20px 0;
+    padding: 0 10px;
     font-size: 16px;
     border: none;
     border-bottom: 2px solid #adadad;
-    background: transparent;
     outline: none;
+    background: transparent;
     transition: 0.3s ease;
 }
 
-/* Animación de línea al enfocar */
-.campo input:focus {
+input:focus {
     border-bottom: 2px solid #7F22FE;
 }
 
-/* Placeholder animado */
-.campo input::placeholder {
+input::placeholder {
     color: #999;
     transition: 0.3s;
 }
 
-.campo input:focus::placeholder {
+input:focus::placeholder {
     color: #7F22FE;
 }
 
-/* Recordar contraseña */
-.recordar {
-    font-size: 14px;
-    margin-bottom: 20px;
+/* Casilla de términos y condiciones */
+.acuerdo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    margin: 20px 0;
+    color: #555;
 }
 
-.recordar:hover {
-    text-decoration: underline;
+.acuerdo input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
     cursor: pointer;
+    accent-color: #7F22FE;
 }
 
-/* Botón iniciar sesión */
-input[type="submit"] {
+/* Botón registrarse */
+button {
     width: 100%;
     height: 50px;
     border: none;
@@ -98,27 +99,26 @@ input[type="submit"] {
     box-shadow: 0 0.5rem 1rem rgba(127, 34, 254, 0.4);
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: #5e18c4;
     box-shadow: 0 0.6rem 1.2rem rgba(94, 24, 196, 0.5);
 }
 
-/* Enlace a registro */
-.registrarse {
-    margin: 30px 0 0 0;
+/* Link inferior */
+.link {
     text-align: center;
-    font-size: 16px;
-    color: #333;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
-.registrarse a {
+.link a {
     color: #7F22FE;
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.registrarse a:hover {
+.link a:hover {
     text-decoration: underline;
     color: #5e18c4;
 }
