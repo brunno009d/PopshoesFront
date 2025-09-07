@@ -9,6 +9,24 @@ body {
   list-style: none;
 }
 
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;  /* activa cursiva */
+  font-weight: 400;    /* peso normal, cambia a 700 para negrita */
+  font-size: 2rem;     /* tamaño a tu gusto */
+  margin: 30px;
+  text-align: center;  /* centrado */
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Roboto', sans-serif; /* tipografía */
+  font-size: 18px; /* tamaño de letra */
+  line-height: 1.6; /* espacio entre líneas */
+  color: #333333; /* color del texto */
+  text-align: center; /* texto justificado */
+  margin: 5px 5px; /* márgenes superior e inferior */
+}
 
 /* Navbar principal */
 .navbar {
@@ -194,6 +212,52 @@ body {
     width: 60%; /* ocupa menos del 100% para que quede centrada y margen a los lados */
     margin: 0 auto;
   }
+}
+
+
+.row-2img-text {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: space-between; /* espacio entre texto e imágenes */
+  gap: 20px; /* separación */
+  margin: 40px 0;
+}
+
+.row-2img-text .text {
+  flex: 1; /* ocupa espacio proporcional */
+  max-width: 60%; /* texto ocupa menos ancho */
+  padding-left: 60px;
+}
+
+.row-2img-text .text h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.row-2img-text .text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.row-2img-text .images {
+  flex: 1;
+  display: flex;
+  gap: 15px; /* espacio entre imágenes */
+  justify-content: center;
+}
+
+.row-2img-text .images img {
+  width: 100%;
+  max-width: 250px; /* controlas el tamaño */
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out; /* transición suave */
+}
+
+.row-2img-text .images img:hover {
+  transform: scale(1.1); /* hace zoom al 110% */
 }
 
 
