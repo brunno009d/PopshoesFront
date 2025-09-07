@@ -2,84 +2,166 @@ const calzados = [
     {
         id: "calz-01",
         titulo: "Zap1",
-        imagen: "../assets/img/diseño sin título (2).png",
+        precio: 50000,
+        imagen: "../assets/img/banner 1.webp",
         genero: {
             id: "hombre",
             nombre: "Hombre"
+        },
+        marca:{
+            id: "puma",
+            nombre: "Puma"
+        },
+        color:{
+            id: "axul",
+            nombre: "Azul"
+        },
+        famosos:{
+            id: "badbunny",
+            nombre: "Badbunny"
         }
     },
     {
         id: "calz-02",
         titulo: "Zap2",
-        imagen: "../assets/img/diseño sin título (2).png",
+        precio: 90000,
+        imagen: "../assets/img/banner 2.webp",
         genero: {
             id: "mujer",
             nombre: "mujer"
+        },
+        marca:{
+            id: "puma",
+            nombre: "Puma"
+        },
+        color:{
+            id: "axul",
+            nombre: "Azul"
+        },
+        famosos:{
+            id: "badbunny",
+            nombre: "Badbunny"
         }
     },
     {
         id: "calz-03",
         titulo: "Zap3",
-        imagen: "../assets/img/diseño sin título (2).png",
+        precio: 50000,
+        imagen: "../assets/img/banner 3.webp",
         genero: {
             id: "hombre",
             nombre: "Hombre"
+        },
+        marca:{
+            id: "puma",
+            nombre: "Puma"
+        },
+        color:{
+            id: "axul",
+            nombre: "Azul"
+        },
+        famosos:{
+            id: "badbunny",
+            nombre: "Badbunny"
         }
     },
     {
         id: "calz-04",
         titulo: "Zap4",
-        imagen: "../assets/img/diseño sin título (2).png",
+        precio: 65000,
+        imagen: "../assets/img/banner 4.webp",
         genero: {
             id: "mujer",
             nombre: "mujer"
+        },
+        marca:{
+            id: "puma",
+            nombre: "Puma"
+        },
+        color:{
+            id: "axul",
+            nombre: "Azul"
+        },
+        famosos:{
+            id: "badbunny",
+            nombre: "Badbunny"
         }
     },
     {
         id: "calz-05",
         titulo: "Zap5",
-        imagen: "../assets/img/diseño sin título (2).png",
+        precio: 60000,
+        imagen: "../assets/img/banner 5.webp",
         genero: {
-            id: "hombre",
-            nombre: "Hombre"
+            id: "mujer",
+            nombre: "Mujer"
+        },
+        marca:{
+            id: "adidas",
+            nombre: "Adidas"
+        },
+        color:{
+            id: "negro",
+            nombre: "Negro"
+        },
+        famosos:{
+            id: "madona",
+            nombre: "Madona"
         }
     },
     {
         id: "calz-06",
         titulo: "Zap6",
-        imagen: "../assets/img/diseño sin título (2).png",
+        precio: 80000,
+        imagen: "../assets/img/banner 6.webp",
         genero: {
             id: "hombre",
             nombre: "Hombre"
-        }
-    },
-    {
-        id: "calz-07",
-        titulo: "Zap7",
-        imagen: "../assets/img/diseño sin título (2).png",
-        genero: {
-            id: "mujer",
-            nombre: "mujer"
-        }
-    },
-    {
-        id: "calz-08",
-        titulo: "Zap8",
-        imagen: "../assets/img/diseño sin título (2).png",
-        genero: {
-            id: "hombre",
-            nombre: "Hombre"
+        },
+        marca:{
+            id: "puma",
+            nombre: "Puma"
+        },
+        color:{
+            id: "axul",
+            nombre: "Azul"
+        },
+        famosos:{
+            id: "badbunny",
+            nombre: "Badbunny"
         }
     }
 ]
 
-function cargarCalzados(){
-    array.forEach(calzado => {
-        const div = document.createElement("div");
-        div.classList.add("calzado");
-    });
+const contenedorCalzado = document.querySelector(".productos")
 
+function cargarCalzados(){
+    calzados.forEach(calzado => {
+        const div = document.createElement("div");
+        div.classList.add("producto");
+        div.innerHTML = `
+        <div class="producto-imagen">
+            <img src="${calzado.imagen}" alt="${calzado.titulo}">
+        </div>
+        <h3>${calzado.titulo}</h3>
+        <p>$${calzado.precio}</p>
+        <button ${calzado.id}>Añadir al carrito</button>
+        `;
+
+        contenedorCalzado.appendChild(div);
+    });
 }
+
+cargarCalzados();
+
+// carrito
+const productosCarrito = [];
+
+// e devuelve una 
+function agregarProductosCarrito(e){
+     
+}
+
 
 /*
 <div class="producto">
