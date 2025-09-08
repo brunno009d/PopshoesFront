@@ -1,16 +1,16 @@
 const calzados = [
     {
         id: "calz-01",
-        titulo: "Zap1",
-        precio: 50000,
-        imagen: "../assets/img/banner 1.webp",
+        titulo: "Air Forece 1 Triple Wiite",
+        precio: 112000,
+        imagen: "../assets/img/AF1 WHITE.webp",
         genero: {
             id: "hombre",
             nombre: "Hombre"
         },
         marca:{
-            id: "puma",
-            nombre: "Puma"
+            id: "nike",
+            nombre: "Nike"
         },
         color:{
             id: "axul",
@@ -23,16 +23,16 @@ const calzados = [
     },
     {
         id: "calz-02",
-        titulo: "Zap2",
-        precio: 90000,
-        imagen: "../assets/img/banner 2.webp",
+        titulo: "Nike P-6000 Metallic Silver",
+        precio: 136000,
+        imagen: "../assets/img/NikeP-6000 'Metallic Silver.webp",
         genero: {
-            id: "mujer",
-            nombre: "mujer"
+            id: "hombre",
+            nombre: "Hombre"
         },
         marca:{
-            id: "puma",
-            nombre: "Puma"
+            id: "nike",
+            nombre: "Nike"
         },
         color:{
             id: "axul",
@@ -45,12 +45,12 @@ const calzados = [
     },
     {
         id: "calz-03",
-        titulo: "Zap3",
-        precio: 50000,
-        imagen: "../assets/img/banner 3.webp",
+        titulo: "Puma Sneakers Gold",
+        precio: 89000,
+        imagen: "../assets/img/PUMA Sneakers Gold.webp",
         genero: {
-            id: "hombre",
-            nombre: "Hombre"
+            id: "mujer",
+            nombre: "Mujer"
         },
         marca:{
             id: "puma",
@@ -67,9 +67,9 @@ const calzados = [
     },
     {
         id: "calz-04",
-        titulo: "Zap4",
-        precio: 65000,
-        imagen: "../assets/img/banner 4.webp",
+        titulo: "Puma Speedcat OG",
+        precio: 80000,
+        imagen: "../assets/img/PUMASpeedcat OG 'Haute Coffee.webp",
         genero: {
             id: "mujer",
             nombre: "mujer"
@@ -89,9 +89,9 @@ const calzados = [
     },
     {
         id: "calz-05",
-        titulo: "Zap5",
-        precio: 60000,
-        imagen: "../assets/img/banner 5.webp",
+        titulo: "Adidas Superstar Iridescent",
+        precio: 94000,
+        imagen: "../assets/img/adidas Superstar 'Iridescent.webp",
         genero: {
             id: "mujer",
             nombre: "Mujer"
@@ -111,16 +111,16 @@ const calzados = [
     },
     {
         id: "calz-06",
-        titulo: "Zap6",
-        precio: 80000,
-        imagen: "../assets/img/banner 6.webp",
+        titulo: "Adidas Samba OG Black Cat",
+        precio: 94000,
+        imagen: "../assets/img/adidasSamba OG 'Black Cat.webp",
         genero: {
             id: "hombre",
             nombre: "Hombre"
         },
         marca:{
-            id: "puma",
-            nombre: "Puma"
+            id: "adidas",
+            nombre: "Adidas"
         },
         color:{
             id: "axul",
