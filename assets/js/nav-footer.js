@@ -11,7 +11,7 @@ function navBar() {
         <nav class="navbar">
             <!-- Logo -->
             <div class="navbar-logo">
-                <img src="../assets/img/logo.png" alt="Logo">
+                <img src="../assets/img/logo.webp" alt="Logo">
             </div>
 
             <!-- Menú -->
@@ -46,7 +46,7 @@ function footer() {
             <div class="footer-row">
                 <!-- Logo -->
                 <div class="footer-links">
-                    <a href="#"><img src="assets/img/logo.png" alt="popshoes" class="footer-logo"></a>
+                    <a href="#"><img src="../assets/img/logo.webp" alt="popshoes" class="footer-logo"></a>
                 </div>
 
                 <!-- Contacto -->
