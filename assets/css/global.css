@@ -1,0 +1,203 @@
+body {
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;  /* activa cursiva */
+  font-weight: 400;    /* peso normal, cambia a 700 para negrita */
+  font-size: 2rem;     /* tamaño a tu gusto */
+  margin: 30px;
+  text-align: center;  /* centrado */
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Roboto', sans-serif; /* tipografía */
+  font-size: 18px; /* tamaño de letra */
+  line-height: 1.6; /* espacio entre líneas */
+  color: #333333; /* color del texto */
+  text-align: center; /* texto justificado */
+  margin: 5px 5px; /* márgenes superior e inferior */
+}
+
+/* Navbar principal */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo - Menú - Acciones */
+  align-items: center;
+  background-color: black;
+  padding: 10px 10rem 10px 10rem;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 60px;
+  cursor: pointer;
+  margin-right: 100px;
+  
+}
+
+/* Menú (centrado con flex-grow) */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;             /* ocupa el espacio disponible */
+  justify-content: left;  /* centra el menú */
+}
+
+.menu-item a {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;  /* activa cursiva */
+  font-weight: 300;    /* peso normal, cambia a 700 para negrita */
+  font-size: 20px;     /* tamaño a tu gusto */
+  text-align: center;  /* centrado */
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: #760499;
+}
+
+/* Acciones (derecha) */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* separa carrito y login */
+}
+
+/* Carrito */
+.navbar-cart i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Login */
+.navbar-login a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-login a:hover {
+  color: #760499;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu {
+    flex-basis: 100%; /* ocupa toda la fila */
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .navbar-actions {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+
+/* logo footer */
+.footer-logo {
+  padding-top: 10px;
+  width: 150px;   /* ancho */
+  height: auto;   /* mantiene proporción */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer{
+  background-color: black;
+  padding: 40px 0;
+}
+
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid purple;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-links ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+  transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+  color: antiquewhite;
+  padding-left: 6px;
+}
+
+.social-links a{
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: rgba(red, green, blue, alpha);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all .5s ease;
+}
+
+.social-links a:hover{
+  background-color: purple;
+}
+
+@media(max-width:991px){
+  .footer-row{
+    text-align: center;
+  }
+
+  .footer-links{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

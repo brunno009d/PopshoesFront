@@ -1,45 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/carrito.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <!-- Google Fonts (necesario en cada página) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
     <title>Document</title>
-    
+
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <!-- Logo -->
-            <div class="navbar-logo">
-                <img src="../assets/img/logo.png" alt="Logo">
-            </div>
-
-            <!-- Menú centrado -->
-            <ul class="navbar-menu">
-                <li class="menu-item"><a href="../index.html">Home</a></li>
-                <li class="menu-item"><a href="../html/catalogo.html">Marcas</a></li>
-                <li class="menu-item"><a href="../html/catalogo.html">Mujer</a></li>
-                <li class="menu-item"><a href="../html/catalogo.html">Estilos</a></li>
-                <li class="menu-item"><a href="../html/catalogo.html">Famosos</a></li>
-            </ul>
-
-            <!-- Carrito + Login a la derecha -->
-            <div class="navbar-actions">
-                <div class="navbar-cart">
-                    <a href="../html/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-                <div class="navbar-login">
-                    <a href="../html/inicioSesion.html">Inicio Sesión</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div id="navigator"></div>
 
     <div class="carrito-container">
         <h2>Mi Carrito</h2>
-        
+
         <div class="carrito-layout">
             <div class="carrito-productos">
                 <div class="carrito-sin-contenido">
@@ -87,5 +69,7 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
+    <script src="../assets/js/nav-footer.js"></script>
 </html>
