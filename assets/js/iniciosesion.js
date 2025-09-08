@@ -1,3 +1,4 @@
+
 // iniciosesion.js
 
 // Espera a que el DOM esté cargado
@@ -27,3 +28,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+

@@ -11,21 +11,21 @@ body {
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-style: italic;  /* activa cursiva */
-  font-weight: 400;    /* peso normal, cambia a 700 para negrita */
-  font-size: 2rem;     /* tamaño a tu gusto */
+  font-style: italic;  
+  font-weight: 400;  
+  font-size: 2rem;     
   margin: 30px;
-  text-align: center;  /* centrado */
+  text-align: center; 
   text-transform: uppercase;
 }
 
 p {
-  font-family: 'Roboto', sans-serif; /* tipografía */
-  font-size: 18px; /* tamaño de letra */
-  line-height: 1.6; /* espacio entre líneas */
-  color: #333333; /* color del texto */
-  text-align: center; /* texto justificado */
-  margin: 5px 5px; /* márgenes superior e inferior */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 18px; 
+  line-height: 1.6;
+  color: #333333; 
+  text-align: center; 
+  margin: 5px 5px; 
 }
 
 /* Navbar principal */
@@ -52,16 +52,16 @@ p {
   gap: 30px;
   margin: 0;
   padding: 0;
-  flex-grow: 1;             /* ocupa el espacio disponible */
-  justify-content: left;  /* centra el menú */
+  flex-grow: 1;            
+  justify-content: left;  
 }
 
 .menu-item a {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;  /* activa cursiva */
-  font-weight: 300;    /* peso normal, cambia a 700 para negrita */
-  font-size: 20px;     /* tamaño a tu gusto */
-  text-align: center;  /* centrado */
+  font-style: normal;  
+  font-weight: 300;    
+  font-size: 20px;    
+  text-align: center;  
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -97,14 +97,14 @@ p {
   color: #760499;
 }
 
-/* --- Responsivo --- */
+
 @media (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
   }
 
   .navbar-menu {
-    flex-basis: 100%; /* ocupa toda la fila */
+    flex-basis: 100%; 
     justify-content: center;
     margin-top: 10px;
   }
@@ -125,7 +125,7 @@ p {
 .slider {
   position: relative;
   width: 100%;
-  height: 600px; /* Mantiene altura original de la imagen */
+  height: 600px; 
   overflow: hidden;
 }
 
@@ -139,7 +139,7 @@ p {
 .slides img {
   width: 100%;
   height: 600px;
-  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  object-fit: cover; 
   flex-shrink: 0;
 }
 
@@ -152,8 +152,8 @@ p {
 
 .row-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 20px; /* espacio entre imágenes */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
   padding: 40px;
   background: white;
 }
@@ -173,38 +173,38 @@ p {
 
 .titulo-principal {
   font-family: 'Roboto', sans-serif;
-  font-style: italic;  /* activa cursiva */
-  font-weight: 400;    /* peso normal, cambia a 700 para negrita */
-  font-size: 3rem;     /* tamaño a tu gusto */
+  font-style: italic;  
+  font-weight: 400;    
+  font-size: 3rem;    
   margin: 30px;
-  text-align: center;  /* centrado */
+  text-align: center;  
 }
 
 .row-6 {
   display: grid;
-  grid-template-columns: repeat(6, auto); /* columnas automáticas que se ajustan */
-  gap: 15px; /* espacio entre imágenes */
+  grid-template-columns: repeat(6, auto); 
+  gap: 15px; 
   padding: 10px;
-  justify-content: center; /* centra el grid horizontalmente */
-  align-items: center; /* centra verticalmente si hay alturas diferentes */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .row-6 img {
-  width: 100%; /* ocupa todo el ancho de su columna */
-  height: auto; /* mantiene proporción */
+  width: 100%; 
+  height: auto; 
   display: block;
-  margin: 0 auto; /* asegura que la imagen quede centrada en su celda */
-  transition: transform 0.5s ease-in-out; /* transición suave y lenta */
+  margin: 0 auto; 
+  transition: transform 0.5s ease-in-out; /* transición suave */
 }
 
 .row-6 img:hover {
   transform: scale(1.08);
 }
 
-/* === Responsive para móviles === */
+/* === Responsive   === */
 @media (max-width: 600px) {
   .row-6 {
-    grid-template-columns: 1fr; /* 1 imagen por fila */
+    grid-template-columns: 1fr; 
     justify-content: center;
   }
 
@@ -217,15 +217,15 @@ p {
 
 .row-2img-text {
   display: flex;
-  align-items: center; /* centra verticalmente */
-  justify-content: space-between; /* espacio entre texto e imágenes */
-  gap: 20px; /* separación */
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 20px; 
   margin: 40px 0;
 }
 
 .row-2img-text .text {
-  flex: 1; /* ocupa espacio proporcional */
-  max-width: 60%; /* texto ocupa menos ancho */
+  flex: 1; 
+  max-width: 60%; 
   padding-left: 60px;
 }
 
@@ -244,28 +244,28 @@ p {
 .row-2img-text .images {
   flex: 1;
   display: flex;
-  gap: 15px; /* espacio entre imágenes */
+  gap: 15px; 
   justify-content: center;
 }
 
 .row-2img-text .images img {
   width: 100%;
-  max-width: 250px; /* controlas el tamaño */
+  max-width: 250px; 
   border-radius: 10px;
   object-fit: cover;
-  transition: transform 0.4s ease-in-out; /* transición suave */
+  transition: transform 0.4s ease-in-out; 
 }
 
 .row-2img-text .images img:hover {
-  transform: scale(1.1); /* hace zoom al 110% */
+  transform: scale(1.1); 
 }
 
 
 /* logo footer */
 .footer-logo {
   padding-top: 10px;
-  width: 150px;   /* ancho */
-  height: auto;   /* mantiene proporción */
+  width: 150px;  
+  height: auto;   
 }
 
 .container {
