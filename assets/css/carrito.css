@@ -133,6 +133,11 @@ body {
   flex-shrink: 0;
 }
 
+/* Ocultar */ 
+.disabled {
+  display: none;
+}
+
 
 /* Para que todos los contenidos esten uno bajo el otro */
 
@@ -173,7 +178,7 @@ body {
 
 .producto-precio p {
   font-size: 16px;
-  color: #760499;
+  color: black;
   font-weight: bold;
   margin: 0;
 }

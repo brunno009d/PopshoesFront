@@ -145,8 +145,12 @@ function cargarCalzados(){
         </div>
         <h3>${calzado.titulo}</h3>
         <p>$${calzado.precio}</p>
-        <button ${calzado.id}>Añadir al carrito</button>
+        <button id="${calzado.id}">Añadir al carrito</button>
         `;
+
+        // Añadir event listener al botón
+        const boton = div.querySelector('button');
+        boton.addEventListener('click', agregarProductosCarrito);
 
         contenedorCalzado.appendChild(div);
     });
@@ -155,11 +159,35 @@ function cargarCalzados(){
 cargarCalzados();
 
 // carrito
-const productosCarrito = [];
+let calzadosCarrito = JSON.parse(localStorage.getItem("calzado-carrito")) || [];
+actualizarNumeroCarrito();
 
 // e devuelve una 
 function agregarProductosCarrito(e){
-     
+     const id = e.currentTarget.id;
+     const calzadoAgregado = calzados.find(calzado => calzado.id === id);
+
+     // some nos devuelve true or false de un elemento si es igual
+    if(calzadosCarrito.some(calzado => calzado.id === id)){
+        // definimos el indice de los productos
+        const indice = calzadosCarrito.findIndex(calzado => calzado.id === id);
+        calzadosCarrito[indice].cantidad++;
+
+    } else{
+        // Le agregamos una nueva propiedad
+        const nuevoCalzado = { ...calzadoAgregado, cantidad: 1 };
+        calzadosCarrito.push(nuevoCalzado);
+    }
+
+
+     actualizarNumeroCarrito();
+     localStorage.setItem("calzado-carrito", JSON.stringify(calzadosCarrito));
+}
+
+function actualizarNumeroCarrito(){
+    // funciona como el contador
+    let numero = calzadosCarrito.reduce((acc, calzado) => acc + calzado.cantidad, 0)
+    numeroCarrito.innerHTML = numero
 }
 
 
