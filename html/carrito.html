@@ -23,53 +23,28 @@
         <h2>Mi Carrito</h2>
 
         <div class="carrito-layout">
-            <div class="carrito-productos">
-                <div class="carrito-sin-contenido">
-                </div>
-                <div class="carrito-contenido">
-                    <img class="carrito-imagen" src="../assets/img/Diseño sin título (4).png" alt="">
-                    <div class="producto-descripcion">
-                        <h4>zapatilla</h4>
-                    </div>
-                    <div class="producto-precio">
-                        <p>1200</p>
-                    </div>
-                    <div class="producto-cantidad">
-                        <p>2</p>
-                    </div>
-                    <button> <i class="fa-solid fa-x"></i> </button>
-                </div>
-                <div class="carrito-contenido">
-                    <img class="carrito-imagen" src="../assets/img/Diseño sin título (4).png" alt="">
-                    <div class="producto-descripcion">
-                        <h4>zapatilla</h4>
-                    </div>
-                    <div class="producto-precio">
-                        <p>1200</p>
-                    </div>
-                    <div class="producto-cantidad">
-                        <p>2</p>
-                    </div>
-                    <button> <i class="fa-solid fa-x"></i> </button>
-                </div>
-                <div class="carrito-vaciar">
-                    <p>Vaciar carrito</p>
-                    <button><i class="fa-solid fa-trash"></i></button>
-                </div>
+            <div id="carrito-vacio" class="carrito-sin-contenido">
+                <i class="fa-solid fa-face-frown-open"></i>
+                <p>No hay nada en el carrito</p>
             </div>
-            <div class="carrito-pagar">
+            <div id="carrito-productos" class="carrito-productos disabled">
+                <!-- Se completa con el js.carrito -->
+            </div>
+            <div id="carrito-pagar" class="carrito-pagar disabled">
                 <h3>Total a pagar</h3>
                 <div class="subtotal">
-                    <p id="total-pagar">1000</p>
-                </div>
-                <div class="total a pagar">
-                    <p id="total-pagar">10000</p>
+                    <p id="total-pagar">$0</p>
                 </div>
                 <button class="carrito-boton-comprar">Comprar</button>
             </div>
+
+            <p id="compra" class="disabled">Muchas gracias por su compra</p>
         </div>
     </div>
     <div id="footer"></div>
 </body>
     <script src="../assets/js/nav-footer.js"></script>
+    <script src="../assets/js/arrayCalzados.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/carrito.js"></script>
 </html>
