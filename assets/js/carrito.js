@@ -1,3 +1,5 @@
+
+
 let calzadoCarrito = JSON.parse(localStorage.getItem("calzado-carrito")) || [];
 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
