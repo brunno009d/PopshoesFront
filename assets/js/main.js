@@ -2,7 +2,7 @@ const contenedorCalzado = document.querySelector(".productos")
 const numeroCarrito = document.querySelector(".navbar-cart a")
 
 function cargarCalzados(){
-    // Limpiar el contenedor antes de añadir productos para evitar duplicados
+    // se limpia el contenedor antes de añadir productos para evitar duplicados
     contenedorCalzado.innerHTML = "";
     
     calzados.forEach(calzado => {
@@ -17,7 +17,6 @@ function cargarCalzados(){
         <button id="${calzado.id}">Añadir al carrito</button>
         `;
 
-        // Añadir event listener al botón
         const boton = div.querySelector('button');
         boton.addEventListener('click', agregarProductosCarrito);
 
@@ -25,7 +24,6 @@ function cargarCalzados(){
     });
 }
 
-// Cargar productos cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
     cargarCalzados();
 });
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
 let calzadosCarrito = JSON.parse(localStorage.getItem("calzado-carrito")) || [];
 actualizarNumeroCarrito();
 
-// e devuelve una 
 function agregarProductosCarrito(e){
      const id = e.currentTarget.id;
      const calzadoAgregado = calzados.find(calzado => calzado.id === id);

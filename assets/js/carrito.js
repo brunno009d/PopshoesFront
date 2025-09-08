@@ -36,7 +36,6 @@ function cargarCarrito(){
             contenedorCarritoCalzados.append(div);
         });
         
-        // Actualizar total
         actualizarTotal();
     } else {
         contenedorCarritoVacio.classList.remove("disabled");
@@ -47,11 +46,10 @@ function cargarCarrito(){
 }
 
 function eliminarDelCarrito(id) {
-    // Buscamos el indice del producto
+    // buscar el indice del producto
     const indice = calzadoCarrito.findIndex(calzado => calzado.id === id);
     
     if (indice !== -1) {
-        // Se elimina el producto
         calzadoCarrito.splice(indice, 1);
         localStorage.setItem("calzado-carrito", JSON.stringify(calzadoCarrito));
         cargarCarrito();
@@ -59,17 +57,13 @@ function eliminarDelCarrito(id) {
 }
 
 function actualizarTotal() {
-    // Seleccionamos el elemento HTML donde se muestra el total
     const totalElement = document.getElementById('total-pagar');
     
-    // Si el elemento existe
     if (totalElement) {
-        // Calculamos el total sumando precio × cantidad de cada producto
         const total = calzadoCarrito.reduce((sum, calzado) => {
             return sum + (calzado.precio * calzado.cantidad);
         }, 0);
-        
-        // Actualizamos el HTML con el total formateado (con $ y separadores de miles)
+
         totalElement.textContent = `$${total.toLocaleString()}`;
     }
 }

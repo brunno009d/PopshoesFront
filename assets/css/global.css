@@ -11,21 +11,21 @@ body {
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  font-style: italic;  /* activa cursiva */
-  font-weight: 400;    /* peso normal, cambia a 700 para negrita */
-  font-size: 2rem;     /* tamaño a tu gusto */
+  font-style: italic; 
+  font-weight: 400;   
+  font-size: 2rem;     
   margin: 30px;
-  text-align: center;  /* centrado */
+  text-align: center; 
   text-transform: uppercase;
 }
 
 p {
-  font-family: 'Roboto', sans-serif; /* tipografía */
-  font-size: 18px; /* tamaño de letra */
-  line-height: 1.6; /* espacio entre líneas */
-  color: #333333; /* color del texto */
-  text-align: center; /* texto justificado */
-  margin: 5px 5px; /* márgenes superior e inferior */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 18px; 
+  line-height: 1.6; 
+  color: #333333; 
+  text-align: center; 
+  margin: 5px 5px; 
 }
 
 /* Navbar principal */
@@ -58,10 +58,10 @@ p {
 
 .menu-item a {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;  /* activa cursiva */
-  font-weight: 300;    /* peso normal, cambia a 700 para negrita */
-  font-size: 20px;     /* tamaño a tu gusto */
-  text-align: center;  /* centrado */
+  font-style: normal;  
+  font-weight: 300;    
+  font-size: 20px;     
+  text-align: center;  
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -72,7 +72,7 @@ p {
   color: #760499;
 }
 
-/* Acciones (derecha) */
+/* acciones derecha */
 .navbar-actions {
   display: flex;
   align-items: center;
@@ -104,7 +104,7 @@ p {
   }
 
   .navbar-menu {
-    flex-basis: 100%; /* ocupa toda la fila */
+    flex-basis: 100%; 
     justify-content: center;
     margin-top: 10px;
   }
@@ -126,8 +126,8 @@ p {
 /* logo footer */
 .footer-logo {
   padding-top: 10px;
-  width: 150px;   /* ancho */
-  height: auto;   /* mantiene proporción */
+  width: 150px;  
+  height: auto;   
 }
 
 .container {
