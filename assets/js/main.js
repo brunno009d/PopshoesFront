@@ -1,11 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("calzados").innerHTML = cargarCalzados();
-});
-
 const contenedorCalzado = document.querySelector(".productos")
 const numeroCarrito = document.querySelector(".navbar-cart a")
 
 function cargarCalzados(){
+    // Limpiar el contenedor antes de añadir productos para evitar duplicados
+    contenedorCalzado.innerHTML = "";
+    
     calzados.forEach(calzado => {
         const div = document.createElement("div");
         div.classList.add("producto");
@@ -26,7 +25,10 @@ function cargarCalzados(){
     });
 }
 
-cargarCalzados();
+// Cargar productos cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', function() {
+    cargarCalzados();
+});
 
 // carrito
 let calzadosCarrito = JSON.parse(localStorage.getItem("calzado-carrito")) || [];
@@ -37,14 +39,11 @@ function agregarProductosCarrito(e){
      const id = e.currentTarget.id;
      const calzadoAgregado = calzados.find(calzado => calzado.id === id);
 
-     // some nos devuelve true or false de un elemento si es igual
     if(calzadosCarrito.some(calzado => calzado.id === id)){
-        // definimos el indice de los productos
         const indice = calzadosCarrito.findIndex(calzado => calzado.id === id);
         calzadosCarrito[indice].cantidad++;
 
     } else{
-        // Le agregamos una nueva propiedad
         const nuevoCalzado = { ...calzadoAgregado, cantidad: 1 };
         calzadosCarrito.push(nuevoCalzado);
     }
@@ -61,15 +60,3 @@ function actualizarNumeroCarrito(){
         numeroCarrito.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> <span style="color: white;">${numero}</span>`;
     }
 }
-
-
-/*
-<div class="producto">
-         <div class="producto-imagen">
-            <img src="../assets/img/Diseño sin título (2).png" alt="zapato1">
-            </div>
-            <h3>Zapato 1</h3>
-            <p>Precio: $100.000</p>
-            <button>comprar</button>
-            </div>
-*/
