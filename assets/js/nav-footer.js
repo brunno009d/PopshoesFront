@@ -62,8 +62,8 @@ function footer() {
                 <div class="footer-links">
                     <h4>MÉTODOS DE PAGO</h4>
                     <ul>
-                        <li><a href="#">Teléfono</a></li>
-                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Debito</a></li>
+                        <li><a href="#">Credito</a></li>
                     </ul>
                 </div>
 

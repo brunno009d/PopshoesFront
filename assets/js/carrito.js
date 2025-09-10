@@ -74,4 +74,14 @@ function actualizarTotal() {
     }
 }
 
+function comprar(){
+     const elemento = document.getElementById('boton-comprar');
+
+     if (elemento) {
+        calzadoCarrito.splice(0, calzadoCarrito.length);
+        localStorage.setItem("calzado-carrito", JSON.stringify(calzadoCarrito));
+        cargarCarrito();
+        alert("gracias por tu compra")}
+}
+
 cargarCarrito();
