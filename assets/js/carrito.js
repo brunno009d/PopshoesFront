@@ -41,7 +41,7 @@ function cargarCarrito(){
     } else {
         contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoCalzados.classList.add("disabled");
-        contenedorCarritoPagar.classList.add("disabled");
+        contenedorCarritoPagar.classList.remove("disabled");
         contenedorCarritoComprado.classList.add("disabled");   
     }
 }
@@ -77,11 +77,20 @@ function actualizarTotal() {
 function comprar(){
      const elemento = document.getElementById('boton-comprar');
 
-     if (elemento) {
+     // Prox Colocar try
+     if (elemento){
+        if (calzadoCarrito.length > 0){
         calzadoCarrito.splice(0, calzadoCarrito.length);
         localStorage.setItem("calzado-carrito", JSON.stringify(calzadoCarrito));
         cargarCarrito();
-        alert("gracias por tu compra")}
+        actualizarTotal();
+        alert("gracias por tu compra")
+        }
+        else{
+            alert("Agregue Productos primero")
+        }
+    }
+        
 }
 
 cargarCarrito();
