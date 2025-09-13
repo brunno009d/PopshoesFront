@@ -17,6 +17,8 @@ function cargarCarrito(){
         contenedorCarritoCalzados.innerHTML = "";
     
         calzadoCarrito.forEach(calzado => {
+        const precioZap = `$${calzado.precio.toLocaleString()}`;
+
             const div = document.createElement("div");
             div.classList.add("carrito-contenido");
             div.innerHTML = `
@@ -25,7 +27,7 @@ function cargarCarrito(){
                     <h4>${calzado.titulo}</h4>
                 </div>
                 <div class="producto-precio">
-                    <p>$${calzado.precio}</p>
+                    <p>${precioZap}</p>
                 </div>
                 <div class="producto-cantidad">
                     <p>${calzado.cantidad}</p>
