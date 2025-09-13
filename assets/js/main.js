@@ -6,7 +6,6 @@ function cargarCalzados(){
     contenedorCalzado.innerHTML = "";
     
     calzados.forEach(calzado => {
-        const idPrecio = document.getElementById("precio-zap");
         const precioZap = `$${calzado.precio.toLocaleString()}`;
 
         const div = document.createElement("div");
@@ -16,7 +15,7 @@ function cargarCalzados(){
             <img src="${calzado.imagen}" alt="${calzado.titulo}">
         </div>
         <h3>${calzado.titulo}</h3>
-        <p id="precio-zap">${precioZap}</p>
+        <p>${precioZap}</p>
         <button id="${calzado.id}">Añadir al carrito</button>
         `;
 
