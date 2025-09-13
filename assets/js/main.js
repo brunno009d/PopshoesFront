@@ -6,6 +6,8 @@ function cargarCalzados(){
     contenedorCalzado.innerHTML = "";
     
     calzados.forEach(calzado => {
+        const precioZap = `$${calzado.precio.toLocaleString()}`;
+
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
@@ -13,7 +15,7 @@ function cargarCalzados(){
             <img src="${calzado.imagen}" alt="${calzado.titulo}">
         </div>
         <h3>${calzado.titulo}</h3>
-        <p>$${calzado.precio}</p>
+        <p>${precioZap}</p>
         <button id="${calzado.id}">Añadir al carrito</button>
         `;
 
@@ -59,4 +61,8 @@ function actualizarNumeroCarrito(){
     if (numeroCarrito) {
         numeroCarrito.innerHTML = `<i class="fa-solid fa-cart-shopping"></i> <span style="color: white;">${numero}</span>`;
     }
+}
+
+function filtro(){
+    
 }
